@@ -4,11 +4,12 @@
       <h2 class="mb-5 mt-3" tabindex="0">Dúvidas ? Fale com a gente.</h2>
       <form #form="ngForm" class="d-flex flex-column">
         <input class="camp mb-1" type="email" name="email" placeholder="Endereço de email" #email="ngModel"
-         [ngModel]="email.value"  required >
+         [ngModel]="email.value" pattern="[A-Za-z0-9._%+-]+@+[A-Za-z0-9._%+-]+.com"  required >
         <span class="erro" *ngIf="email.invalid && email.touched">*Campo Obrigatorio !</span>
-        <input class="camp mb-1" type="text" name="name" #name="ngModel" [ngModel]="name.value" placeholder="Nome Completo" required  >
+        <input class="camp mb-1" type="text" name="name" #name="ngModel"
+        [ngModel]="name.value" placeholder="Nome Completo" minlength="3" required  >
         <span class="erro" *ngIf="name.invalid && name.touched">*Campo Obrigatorio !</span>
-        <textarea required name="coment"  class="camp" placeholder="Escreva um comentario"
+        <textarea required name="coment" minlength="5"  class="camp" placeholder="Escreva um comentario"
          cols="30" rows="10" #coment="ngModel" [ngModel]="coment.value" ></textarea>
          <span class="erro" *ngIf="coment.invalid && coment.touched">*Campo Obrigatorio !</span>
          <button [disabled]="form.invalid" class="btn btn-primary mt-3 mb-2" (click)="open(content)" >Enviar</button>
@@ -53,7 +54,7 @@
 	<div class="modal-body">
 		<form>
 			<div class="mb-3">
-        Entraremos em contato pelo seu e-mail
+        Entraremos em contato em breve !
 			</div>
 		</form>
 	</div>
