@@ -2,12 +2,17 @@
   <div class="question d-flex justify-content-center" id="questions">
     <div class="content3 d-flex flex-column">
       <h2 class="mb-5 mt-3" tabindex="0">Dúvidas ? Fale com a gente.</h2>
-      <form action="" class="d-flex flex-column">
-        <input class="camp mb-3" type="email"  placeholder="Endereço de email" >
-        <input class="camp mb-3"type="text"  placeholder="Nome Completo" >
-        <textarea class="camp" placeholder="Escreva um comentario" name="" id="" cols="30" rows="10"></textarea>
-        <button class="btn btn-primary mt-3 mb-2" >Enviar</button>
-        <span tabindex="0">*Entraremos em contato através de seu endereço de e-mail</span>
+      <form #form="ngForm" class="d-flex flex-column">
+        <input class="camp mb-1" type="email" name="email" placeholder="Endereço de email" #email="ngModel"
+         [ngModel]="email.value"  required >
+        <span class="erro" *ngIf="email.invalid && email.touched">*Campo Obrigatorio !</span>
+        <input class="camp mb-1" type="text" name="name" #name="ngModel" [ngModel]="name.value" placeholder="Nome Completo" required  >
+        <span class="erro" *ngIf="name.invalid && name.touched">*Campo Obrigatorio !</span>
+        <textarea required name="coment"  class="camp" placeholder="Escreva um comentario"
+         cols="30" rows="10" #coment="ngModel" [ngModel]="coment.value" ></textarea>
+         <span class="erro" *ngIf="coment.invalid && coment.touched">*Campo Obrigatorio !</span>
+         <button [disabled]="form.invalid" class="btn btn-primary mt-3 mb-2" (click)="open(content)" >Enviar</button>
+         <span tabindex="0">*Entraremos em contato através de seu endereço de e-mail</span>
       </form>
     </div>
   </div>
@@ -39,3 +44,17 @@
     </div>
   </div>
 </footer>
+
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Enviado com sucesso !</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="mb-3">
+        Entraremos em contato pelo seu e-mail
+			</div>
+		</form>
+	</div>
+</ng-template>
