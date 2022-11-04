@@ -1,0 +1,31 @@
+#drop{
+  display: none;
+  box-shadow: 0px 0px 2px gray;
+  background: white;
+}
+header {
+  .logo {
+    width: 15%;
+    left: 5%;
+    top: 18px;
+  }
+
+  nav {
+    border-bottom: 1px solid #155bcb;
+    min-height: 10vh;
+
+    ul {
+      width: 94%;
+
+      li {
+        flex-wrap: nowrap;
+        color: #155bcb;
+        font-family: 'Recursive', sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        list-style-type: none;
+      }
+    }
+  }
+}
+

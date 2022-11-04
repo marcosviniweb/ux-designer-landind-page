@@ -1,0 +1,80 @@
+body {
+  color: #155bcb;
+  font-family: 'Recursive', sans-serif;
+  .banner {
+    width: 42vw;
+    right: 5px;
+    top: 18px;
+  }
+
+  main {
+    width: 90% !important;
+    .content1 {
+      margin-top: 20vh;
+      width: 40%;
+
+      h1 {
+        color: black;
+        margin-left: 1%;
+        width: 90%;
+      }
+
+      button {
+        margin-top: 8vh;
+        width: 200px;
+        height: 8vh;
+      }
+    }
+
+    .icons {
+      width: 70%;
+      img {
+        width: max-content
+      }
+    }
+  }
+
+  section {
+    .content2 {
+      min-height: 720px;
+      background: url(/assets/img/fundo01.png) center/cover !important;
+      padding-bottom: 100px;
+    }
+
+    .title2 {
+      color: #18376d;
+      width: 80%;
+    }
+
+    .book {
+      min-width: 200px;
+      width: 90%;
+    }
+
+    .text1 {
+      h3 {
+      color: black;
+      font-size: 22px;
+      }
+    }
+    button {
+      width: 200px;
+    }
+    .about{
+      .about-content{
+        width: 80%;
+        .about-text{
+          h3{
+            font-size: 22px !important;
+          }
+        }
+      }
+      .social{
+        border-bottom: 1px solid #155bcb;
+      }
+
+    }
+
+  }
+
+}

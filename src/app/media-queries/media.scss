@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1000px) {
+  #menu{
+    display: none !important;
+  }
+  #drop{
+    display: inline-flex !important;
+  }
+  #banner{
+    display: none !important;
+  }
+  .content1{
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .title1{
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .icons{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .title2{
+    width: 100% !important;
+    font-size: 18px !important;
+  }
+  .text1{
+    width: 100% !important;
+  }
+  .book{
+    width: 50% !important;
+    min-width: 300px !important;
+  }
+  .about-content{
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .about-text{
+    order: 2;
+  }
+  .thadeu{
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .content3{
+    width: 80% !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .camp{
+    width: 100% !important;
+  }
+  .logo{
+    min-width: 100px !important;
+  }
+  .download{
+    background: none !important;
+  }
+  .content4{
+    width: 100% !important;
+    text-align: center;
+    align-items: center;
+  }
+  .text2{
+    width: 90% !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .link{
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .home{
+    margin-top: 16px !important;
+  }
+
+}

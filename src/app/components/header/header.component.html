@@ -1,0 +1,26 @@
+<header class="d-inline-flex align-items-center justify-content-center w-100 top-0" id="menu">
+  <img src="assets/img/LOGO.png" class="position-absolute logo">
+  <nav class="d-inline-flex align-items-end w-50 mt-2" >
+    <ul class="d-inline-flex flex-row-wrap justify-content-evenly m-0 mb-2 ">
+      <li>Produtos</li>
+      <li>Quem Somos ?</li>
+      <li>Contato</li>
+      <li>Download</li>
+    </ul>
+  </nav>
+</header>
+<header class="d-none align-items-center justify-content-around w-100 top-0 position-fixed" id="drop">
+  <img class="logo" src="assets/img/LOGO.png" width="16%">
+  <div ngbDropdown class="d-inline-block">
+    <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+      Menu
+    </button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button ngbDropdownItem>Produtos</button>
+      <button ngbDropdownItem>Quem Somos ?</button>
+      <button ngbDropdownItem>Contato</button>
+      <button ngbDropdownItem>Download</button>
+    </div>
+  </div>
+</header>
+

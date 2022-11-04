@@ -1,0 +1,44 @@
+.question{
+  height: 420px;
+  background: url(/assets/img/fundo02.png) left/cover !important;
+  .content3{
+    width: 70%;
+    h2{color: white;}
+    input{
+      min-width: 280px;
+      width: 40%;
+      text-indent: 10px;
+    }
+    textarea{
+      width:60% ;
+      min-width: 280px;
+      height: 20vh;
+      border-radius: 10px;
+      text-indent: 10px;
+    }
+    button{
+      width: 180px;
+    }
+    span{
+      font-size: 10px;
+      color: white;
+    }
+  }
+}
+.download{
+  height: 360px;
+  background: url(/assets/img/donwnload.png) center no-repeat ;
+  .content4{
+    color: #155bcb;
+    width: 80%;
+    h3{font-size: 22px;}
+    .text2{
+      width: 42%;
+      margin-left: 5%;
+    }
+    .link{
+      width: 98% !important;
+      margin-left: 5%;
+    }
+  }
+}
