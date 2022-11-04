@@ -26,8 +26,15 @@
     width: 100% !important;
     font-size: 18px !important;
   }
+  .linha{
+    flex-direction: column;
+  }
+  .wid{
+    width: 98% !important;
+  }
   .text1{
     width: 100% !important;
+    text-align: center !important;
   }
   .book{
     width: 50% !important;

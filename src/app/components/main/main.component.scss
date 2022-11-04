@@ -28,6 +28,12 @@ body {
 
     .icons {
       width: 70%;
+      .icon{
+        p{
+          width: 70%;
+        }
+
+      }
       img {
         width: max-content
       }
@@ -39,25 +45,34 @@ body {
       min-height: 720px;
       background: url(/assets/img/fundo01.png) center/cover !important;
       padding-bottom: 100px;
+      .wid{
+        width: 80%;
+        button{
+          margin-top: 50px;
+        }
+      }
     }
-
     .title2 {
       color: #18376d;
-      width: 80%;
-    }
+      width: 90%;
 
+    }
     .book {
       min-width: 200px;
-      width: 90%;
+      width: 120% ;
     }
-
     .text1 {
+      margin-top: 100px;
+      text-align: center;
       h3 {
       color: black;
-      font-size: 22px;
+      font-size: 23px;
       }
     }
     button {
+      a{
+        color: white;
+      }
       width: 200px;
     }
     .about{
